@@ -16,9 +16,9 @@ def l2_norm(input, axis = 1):
 def extract_feature(img_root, backbone, model_root, device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu"), tta = True):
     # pre-requisites
     assert(os.path.exists(img_root))
-    print('Testing Data Root:', img_root)
+    # print('Testing Data Root:', img_root)
     assert (os.path.exists(model_root))
-    print('Backbone Model Root:', model_root)
+    # print('Backbone Model Root:', model_root)
 
     # load image
     img = cv2.imread(img_root)
