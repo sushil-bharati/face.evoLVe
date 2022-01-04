@@ -52,7 +52,7 @@ def extract_feature(img_root, backbone, model_root, device = torch.device("cuda:
 
 
     # load backbone from a checkpoint
-    print("Loading Backbone Checkpoint '{}'".format(model_root))
+    # print("Loading Backbone Checkpoint '{}'".format(model_root))
     backbone.load_state_dict(torch.load(model_root))
     backbone.to(device)
 
